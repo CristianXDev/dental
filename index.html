@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental - 24 Hours Service Dentist</title>
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Transparent / Glassmorphism Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <!-- Tooth Logo SVG -->
+                <svg width="32" height="36" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 2C7.5 2 4 4.5 4 8.5C4 12.5 5.5 15.5 7 19.5C8.2 22.7 9.5 26 11 26C11.5 26 12 24 12 22.5C12 24 12.5 26 13 26C14.5 26 15.8 22.7 17 19.5C18.5 15.5 20 12.5 20 8.5C20 4.5 16.5 2 12 2Z" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M9 7C9 7 10 6 12 6" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                Dental
+            </a>
+            
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Minimalist Background Geometric Shapes (Left Side) -->
+        <div class="bg-shapes-left">
+            <div class="geo-shape geo-circle-1"></div>
+            <div class="geo-shape geo-circle-2"></div>
+            <div class="geo-shape geo-square-1"></div>
+            <div class="geo-shape geo-ring-1"></div>
+            <div class="geo-shape geo-cross-1"></div>
+            <div class="geo-shape geo-diamond-1"></div>
+            <div class="geo-shape geo-dots-grid"></div>
+            <div class="geo-shape geo-circle-small"></div>
+        </div>
+
+        <div class="container position-relative z-2">
+            <div class="row align-items-center">
+                <!-- Left Text Content -->
+                <div class="col-lg-6 z-2">
+                    <h1 class="hero-title">24 Hours<br>Service Dentist!</h1>
+                    <p class="hero-subtitle">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                    
+                    <!-- Primary CTA -->
+                    <a href="#appointment" class="btn-appointment">Make Appointment</a>
+
+                    <!-- Google Reviews Social Proof Badge -->
+                    <div class="social-proof-wrapper">
+                        <div class="avatar-group">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                        </div>
+                        <div class="proof-details">
+                            <div class="stars-row">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <span class="score">4.9 / 5.0</span>
+                            </div>
+                            <div class="proof-text">
+                                Más de 500+ reseñas en 
+                                <span class="google-brand">
+                                    <!-- Official Multi-color Google SVG Logo -->
+                                    <svg class="google-logo-svg" viewBox="0 0 24 24">
+                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                                    </svg>
+                                    <div class="d-flex">
+                                        <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Image / Illustration with Organic Shapes -->
+                <div class="col-lg-6 position-relative">
+                    <div class="hero-image-wrapper">
+                      <!-- Capa 2 Posterior SÓLIDA movida hacia la derecha -->
+                      <svg class="blob-bg-back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none">
+                            <path d="M480,300Q460,420,350,460Q240,500,150,420Q60,340,110,220Q160,100,280,80Q400,60,450,170Q500,280,480,300Z" fill="#7dd3fc"/>
+                        </g>
+                    </svg>
+                    <!-- Capa 1 Principal Sólida -->
+                    <svg class="blob-bg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="none">
+                            <path d="M420,320Q390,390,320,420Q250,450,180,410Q110,370,100,290Q90,210,160,160Q230,110,310,130Q390,150,425,225Q460,300,420,320Z" fill="#93c5fd" opacity="0.6"/>
+                            <path d="M480,300Q460,420,350,460Q240,500,150,420Q60,340,110,220Q160,100,280,80Q400,60,450,170Q500,280,480,300Z" fill="#3b82f6"/>
+                        </g>
+                    </svg>
+
+                    <!-- Floating decorative elements -->
+                    <div class="floating-blob-1"></div>
+                    <div class="floating-blob-2"></div>
+                    <div class="floating-circle-1"></div>
+                    <div class="floating-circle-2"></div>
+
+                    <!-- Illustrated Nurse / Doctor SVG (Arms Crossed, Modern Vector Style) -->
+                    <img src="img/hero/woman.png" class="nurse-vector">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section class="services-section">
+    <div class="container">
+        <h2 class="services-title">Service</h2>
+        <p class="services-subtitle">Services High Quality Service For You</p>
+
+        <div class="row g-3 g-lg-4 justify-content-center">
+            <!-- Service 1: Protección Dental -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="service-card" data-index="0">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M32 6C20 6 12 12 12 20C12 30 15 36 18 46C20.5 53 23 60 27 60C28 60 29 55 29 51C29 55 30 60 31 60C35 60 37.5 53 40 46C43 36 46 30 46 20C46 12 38 6 32 6Z"/>
+                            <path d="M25 24L30 29L39 19" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Protección</h3>
+                    <p class="service-desc">Cuidado preventivo y sellados de protección.</p>
+                </div>
+            </div>
+
+            <!-- Service 2: Blanqueamiento Dental -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="service-card" data-index="1">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M32 6C20 6 12 12 12 20C12 30 15 36 18 46C20.5 53 23 60 27 60C28 60 29 55 29 51C29 55 30 60 31 60C35 60 37.5 53 40 46C43 36 46 30 46 20C46 12 38 6 32 6Z"/>
+                            <path d="M22 14L24 18L28 19L24 21L22 25L20 21L16 19L20 18Z" fill="none"/>
+                            <path d="M42 28L43 31L46 32L43 33L42 36L41 33L38 32L41 31Z" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Blanqueamiento</h3>
+                    <p class="service-desc">Sonrisas radiantes y más blancas.</p>
+                </div>
+            </div>
+
+            <!-- Service 3: Ortodoncia -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="service-card active" data-index="2">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M32 6C20 6 12 12 12 20C12 30 15 36 18 46C20.5 53 23 60 27 60C28 60 29 55 29 51C29 55 30 60 31 60C35 60 37.5 53 40 46C43 36 46 30 46 20C46 12 38 6 32 6Z"/>
+                            <path d="M12 26H52"/>
+                            <rect x="25" y="21" width="14" height="10" rx="2"/>
+                            <path d="M32 21V31"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Ortodoncia</h3>
+                    <p class="service-desc">Brackets y alineadores invisibles.</p>
+                </div>
+            </div>
+
+            <!-- Service 4: Implantes -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="service-card" data-index="3">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M18 10C18 6 24 4 32 4C40 4 46 6 46 10C46 18 43 22 40 28C38 32 36 34 36 34H28C28 34 26 32 24 28C21 22 18 18 18 10Z"/>
+                            <path d="M24 38H40"/>
+                            <path d="M26 44H38"/>
+                            <path d="M28 50H36"/>
+                            <path d="M32 50V58"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Implantes</h3>
+                    <p class="service-desc">Reconstrucción y salud permanente.</p>
+                </div>
+            </div>
+
+            <!-- Service 5: Limpieza Dental -->
+            <div class="col-6 col-md-4 col-lg-2">
+                <div class="service-card" data-index="4">
+                    <div class="service-icon-wrapper">
+                        <svg viewBox="0 0 64 64">
+                            <path d="M32 6C20 6 12 12 12 20C12 30 15 36 18 46C20.5 53 23 60 27 60C28 60 29 55 29 51C29 55 30 60 31 60C35 60 37.5 53 40 46C43 36 46 30 46 20C46 12 38 6 32 6Z"/>
+                            <path d="M48 12L16 48" stroke-width="2.5"/>
+                            <path d="M42 8L52 18" stroke-width="2.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-name">Limpieza</h3>
+                    <p class="service-desc">Profilaxis profunda y eliminación de sarro.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dots Pagination -->
+        <div class="carousel-dots">
+            <span class="dot" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot active" data-index="2"></span>
+            <span class="dot" data-index="3"></span>
+            <span class="dot" data-index="4"></span>
+        </div>
+    </div>
+</section>
+
+<!-- Location Section (Estilo Minimalista Flotante - Fondo Blanco) -->
+<section class="location-clean-section" id="location">
+    <div class="container">
+        <!-- Encabezado sutil -->
+        <div class="text-center mb-5">
+            <span class="clean-badge mb-2">
+                <i class="fa-solid fa-map-pin me-1"></i> Nuestra Sede
+            </span>
+            <h2 class="clean-title">Encuéntranos Fácilmente</h2>
+            <p class="clean-subtitle">Ubicación céntrica con acceso directo y estacionamiento disponible.</p>
+        </div>
+
+        <!-- Contenedor Principal Integrado -->
+        <div class="clean-location-card">
+            <div class="row g-0 align-items-stretch">
+                
+                <!-- Columna Izquierda: Información de la Clínica -->
+                <div class="col-lg-5">
+                    <div class="clean-info-content">
+                        <div class="clinic-header mb-4">
+                            <h3 class="fw-bold text-dark mb-1">San Mateo, Aragua</h3>
+                            <span class="text-muted small">Atención Odontológica Integral</span>
+                        </div>
+
+                        <!-- Lista de datos compacta -->
+                        <div class="clean-details-group">
+                            <div class="clean-detail-row">
+                                <div class="detail-icon-circle">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <span class="detail-label">Dirección</span>
+                                    <p class="detail-val">Av. Principal, Edificio Centro Salud, Piso 2.</p>
+                                </div>
+                            </div>
+
+                            <div class="clean-detail-row">
+                                <div class="detail-icon-circle">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <span class="detail-label">Horarios</span>
+                                    <p class="detail-val mb-0">Lun - Sáb: 8:00 AM - 6:00 PM</p>
+                                    <span class="emergency-tag">Emergencias 24/7</span>
+                                </div>
+                            </div>
+
+                            <div class="clean-detail-row">
+                                <div class="detail-icon-circle">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <span class="detail-label">Contacto</span>
+                                    <p class="detail-val">+58 (412) 000-0000 / +58 (244) 000-0000</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botón de Acción -->
+                        <div class="mt-4 pt-2">
+                            <a href="https://maps.google.com" target="_blank" class="clean-btn">
+                                <i class="fa-solid fa-route me-2"></i> Abrir en Google Maps
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Columna Derecha: Mapa Interactivo Integrado -->
+                <div class="col-lg-7">
+                    <div class="clean-map-container">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15707.98188168132!2d-67.43000000000002!3d10.240000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e802094ef555555%3A0x0!2sSan%20Mateo%2C%20Aragua!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" 
+                            width="100%" 
+                            height="100%" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Team Section / Nuestro Equipo Médico (Estética Ultra Moderna) -->
+<section class="modern-team-section" id="team">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <span class="modern-team-badge mb-2">
+                <i class="fa-solid fa-user-doctor me-1"></i> Especialistas
+            </span>
+            <h2 class="modern-team-title">Nuestro Equipo Médico</h2>
+            <p class="modern-team-subtitle">Profesionales capacitados comprometidos con tu salud y estética bucal.</p>
+        </div>
+
+        <!-- Team Grid -->
+        <div class="row g-4 justify-content-center">
+            
+            <!-- Doctor 1 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="modern-team-card">
+                    <div class="modern-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&w=600&q=80" alt="Dr. Alejandro Silva" class="modern-team-img">
+                        <span class="modern-specialty-badge">Ortodoncia</span>
+                    </div>
+                    <div class="modern-team-info">
+                        <h3 class="modern-doctor-name">Dr. Alejandro Silva</h3>
+                        <p class="modern-doctor-role">Alineación y Brackets</p>
+                        <p class="modern-doctor-bio">Más de 8 años creando sonrisas con las técnicas más avanzadas de ortodoncia invisible.</p>
+                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                            <span>Agendar Cita</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 2 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="modern-team-card">
+                    <div class="modern-img-wrapper">
+                      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Dra. Elena Rostova" class="modern-team-img">
+                        <span class="modern-specialty-badge">Estética Dental</span>
+                    </div>
+                    <div class="modern-team-info">
+                        <h3 class="modern-doctor-name">Dra. Elena Rostova</h3>
+                        <p class="modern-doctor-role">Diseño de Sonrisa</p>
+                        <p class="modern-doctor-bio">Experta en carillas, coronas estéticas y restauración de alta precisión.</p>
+                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                            <span>Agendar Cita</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 3 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="modern-team-card">
+                    <div class="modern-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Dr. Carlos Mendoza" class="modern-team-img">
+                        <span class="modern-specialty-badge">Implantología</span>
+                    </div>
+                    <div class="modern-team-info">
+                        <h3 class="modern-doctor-name">Dr. Carlos Mendoza</h3>
+                        <p class="modern-doctor-role">Cirugía e Implantes</p>
+                        <p class="modern-doctor-bio">Especializado en rehabilitación oral completa y cirugías guiadas sin dolor.</p>
+                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                            <span>Agendar Cita</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Doctor 4 -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <div class="modern-team-card">
+                    <div class="modern-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dra. Valeria Gómez" class="modern-team-img">
+                        <span class="modern-specialty-badge">Odontopediatría</span>
+                    </div>
+                    <div class="modern-team-info">
+                        <h3 class="modern-doctor-name">Dra. Valeria Gómez</h3>
+                        <p class="modern-doctor-role">Cuidado Infantil</p>
+                        <p class="modern-doctor-bio">Dedicada a brindar una experiencia empática, cómoda y sin miedo para los más pequeños.</p>
+                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                            <span>Agendar Cita</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Google Reviews Testimonials Section -->
+<section class="google-reviews-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="text-center mb-5">
+            <div class="google-badge-pill">
+                <svg class="google-svg" viewBox="0 0 24 24">
+                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                </svg>
+                <span>Reseñas Verificadas</span>
+            </div>
+            <h2 class="reviews-title">Lo que dicen nuestros pacientes</h2>
+            <p class="reviews-subtitle">Opiniones reales publicadas directamente en nuestro perfil de Google</p>
+        </div>
+
+        <!-- Infinite Carousel Wrapper -->
+        <div class="reviews-carousel-wrapper">
+            <!-- Fade overlays for smooth infinite blend -->
+            <div class="carousel-fade-left"></div>
+            <div class="carousel-fade-right"></div>
+
+            <div class="reviews-track" id="reviewsTrack">
+                <!-- Testimonial Card 1 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&q=80" alt="María García" class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4 class="reviewer-name">María García</h4>
+                            <span class="review-date">Hace 2 semanas</span>
+                        </div>
+                        <i class="fa-brands fa-google google-icon-card"></i>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Excelente atención. Tenía una emergencia dental un sábado en la noche y me atendieron rápido. El trato del doctor fue muy amable y sin dolor."</p>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" alt="Carlos Mendoza" class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4 class="reviewer-name">Carlos Mendoza</h4>
+                            <span class="review-date">Hace 1 mes</span>
+                        </div>
+                        <i class="fa-brands fa-google google-icon-card"></i>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Me hice un tratamiento de ortodoncia y los resultados superaron mis expectativas. Las instalaciones son modernas y muy limpias."</p>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" alt="Elena Rodríguez" class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4 class="reviewer-name">Elena Rodríguez</h4>
+                            <span class="review-date">Hace 3 semanas</span>
+                        </div>
+                        <i class="fa-brands fa-google google-icon-card"></i>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"El blanqueamiento dental quedó genial. Cero sensibilidad y la explicación antes del procedimiento me dio mucha tranquilidad. 100% recomendados."</p>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="review-card">
+                    <div class="review-header">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&q=80" alt="Javier López" class="reviewer-img">
+                        <div class="reviewer-info">
+                            <h4 class="reviewer-name">Javier López</h4>
+                            <span class="review-date">Hace 2 meses</span>
+                        </div>
+                        <i class="fa-brands fa-google google-icon-card"></i>
+                    </div>
+                    <div class="review-stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="review-text">"Atención profesional de principio a fin. Me colocaron un implante dental y todo el proceso fue impecable. Muy agradecido."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section with Wave SVG & Gradient Background -->
+<section class="contact-section" id="contact">
+    <!-- SVG Wave Divider Superior (Transición suave) -->
+    <div class="contact-wave-top">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C150,90 350,-40 500,45 C650,130 900,10 1200,40 L1200,0 L0,0 Z" fill="#ffffff"></path>
+        </svg>
+    </div>
+
+    <div class="container position-relative z-2">
+        <div class="row align-items-center g-5">
+            
+            <!-- Left Column: Content & CTA -->
+            <div class="col-lg-6">
+                <div class="contact-content">
+                    <span class="contact-badge">
+                        <i class="fa-solid fa-calendar-check"></i> Agenda tu cita en línea
+                    </span>
+                    <h2 class="contact-title">¿Listo para transformar tu sonrisa?</h2>
+                    <p class="contact-subtitle">
+                        Contáctanos hoy mismo para coordinar tu evaluación o atender cualquier consulta médica. Estamos disponibles las 24 horas.
+                    </p>
+
+                    <!-- Info Cards Quick Grid -->
+                    <div class="contact-info-list">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5>Teléfono Directo</h5>
+                                <p>+58 (412) 000-0000</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h5>Chat en WhatsApp</h5>
+                                <p>Respuesta inmediata</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Main Action Button -->
+                    <div class="contact-cta-wrapper">
+                        <a href="https://wa.me/584120000000" target="_blank" class="btn-contact-action">
+                            <i class="fa-solid fa-paper-plane me-2"></i> Agendar Cita Ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Column: Nurse / Doctor Image -->
+            <div class="col-lg-6 text-center text-lg-end">
+                <div class="contact-image-wrapper">
+                    <!-- Layered Wave Pattern behind the Nurse -->
+                    <svg class="contact-blob-wave" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M420,320Q390,390,320,420Q250,450,180,410Q110,370,100,290Q90,210,160,160Q230,110,310,130Q390,150,425,225Q460,300,420,320Z" fill="rgba(255, 255, 255, 0.18)"/>
+                    </svg>
+                    
+                    <img src="img/hero/woman.png" alt="Enfermera Dental" class="contact-nurse-img">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SVG Wave Divider Inferior (Conexión con el Footer) -->
+    <div class="contact-wave-bottom">
+        <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0 C300,90 600,10 1200,60 L1200,120 L0,120 Z" fill="#0f172a"></path>
+        </svg>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row g-4 justify-content-between">
+
+            <!-- Columna 1: Brand & Info -->
+            <div class="col-lg-4 col-md-6">
+                <a class="footer-brand mb-3" href="#">
+                    <svg width="30" height="34" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2C7.5 2 4 4.5 4 8.5C4 12.5 5.5 15.5 7 19.5C8.2 22.7 9.5 26 11 26C11.5 26 12 24 12 22.5C12 24 12.5 26 13 26C14.5 26 15.8 22.7 17 19.5C18.5 15.5 20 12.5 20 8.5C20 4.5 16.5 2 12 2Z" stroke="#2563eb" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9 7C9 7 10 6 12 6" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Dental</span>
+                </a>
+                <p class="footer-desc">
+                    Cuidamos tu sonrisa las 24 horas del día con la mejor tecnología, confort y especialistas altamente cualificados.
+                </p>
+                <!-- Redes Sociales -->
+                <div class="social-links">
+                    <a href="#" class="social-btn" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-btn" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="social-btn" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="#" class="social-btn" aria-label="Google"><i class="fa-brands fa-google"></i></a>
+                </div>
+            </div>
+
+            <!-- Columna 2: Enlaces Rápidos -->
+            <div class="col-lg-2 col-md-6">
+                <h4 class="footer-heading">Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Servicios</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Reseñas</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 3: Servicios Principales -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-heading">Tratamientos</h4>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Ortodoncia Invisible</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Blanqueamiento LED</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Implantes Dentales</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Limpieza y Profilaxis</a></li>
+                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Urgencias 24 Horas</a></li>
+                </ul>
+            </div>
+
+            <!-- Columna 4: Horario y Ubicación -->
+            <div class="col-lg-3 col-md-6">
+                <h4 class="footer-heading">Atención 24/7</h4>
+                <ul class="footer-contact-info">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Av. Principal, Edificio Salud, Piso 2</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>+58 (412) 000-0000</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>contacto@dentalclinic.com</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <hr class="footer-divider">
+
+        <!-- Bottom Copyright -->
+        <div class="row align-items-center copyright-wrapper">
+            <div class="col-md-6 text-center text-md-start">
+                <p class="copyright-text">
+                    &copy; 2026 <strong>Dental Clinic</strong>. Todos los derechos reservados.
+                </p>
+            </div>
+            <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+                <a href="#" class="legal-link">Política de Privacidad</a>
+                <span class="legal-dot">•</span>
+                <a href="#" class="legal-link">Términos del Servicio</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<!-- Bootstrap 5 JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
