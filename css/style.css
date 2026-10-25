@@ -428,6 +428,265 @@ body {
     50% { transform: translateY(-12px) rotate(5deg); }
 }
 
+
+/* ==========================================================================
+   Modern Clinic Overview Section (Bento Grid)
+   ========================================================================== */
+
+.clinic-overview-section {
+    padding: 90px 0;
+    background-color: #fff;
+}
+
+/* Header & Badges */
+.overview-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    color: var(--primary-blue, #2563eb);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid #e2e8f0;
+}
+
+.overview-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0b192c;
+    margin-bottom: 8px;
+}
+
+.overview-subtitle {
+    color: #64748b;
+    font-size: 1.05rem;
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Base Bento Card Style */
+.bento-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 28px;
+    padding: 36px;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bento-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.35);
+    box-shadow: 0 18px 36px rgba(37, 99, 235, 0.08);
+}
+
+/* --------------------------------------------------------------------------
+   Gradientes Diagonales Menos Intensos y Elegantes
+   -------------------------------------------------------------------------- */
+
+.bento-stat-card,
+.bento-feature-card {
+    position: relative;
+    z-index: 1;
+}
+
+/* Primer contenedor: Gradiente diagonal suave de Derecha a Izquierda */
+.bento-stat-card {
+    background: linear-gradient(135deg, #ffffff 40%, rgba(37, 99, 235, 0.10) 100%);
+}
+
+/* Segundo contenedor: Gradiente diagonal suave de Izquierda a Derecha */
+.bento-feature-card {
+    background: linear-gradient(225deg, #ffffff 40%, rgba(37, 99, 235, 0.10) 100%);
+}
+
+/* Asegurar que el contenido interno de las tarjetas quede por encima del fondo */
+.bento-stat-card > *, 
+.bento-feature-card > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* --------------------------------------------------------------------------
+   Elementos Internos de las Tarjetas de la Izquierda
+   -------------------------------------------------------------------------- */
+.bento-stat-number {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #0f172a;
+    line-height: 1;
+    margin-bottom: 6px;
+}
+
+.bento-stat-title, 
+.bento-card-title {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 10px;
+}
+
+.bento-text {
+    font-size: 0.9rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.bento-pill-tag {
+    display: inline-block;
+    background: #eff6ff;
+    color: var(--primary-blue, #2563eb);
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+/* --------------------------------------------------------------------------
+   Main Banner (Columna Derecha lg-5)
+   -------------------------------------------------------------------------- */
+
+.bento-main-banner {
+    height: 100%;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 36px;
+    color: #ffffff;
+    border: none;
+    position: relative;
+}
+
+.bento-banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s ease;
+    z-index: 1;
+}
+
+.bento-main-banner:hover .bento-banner-bg {
+    transform: scale(1.05);
+}
+
+.bento-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(15, 23, 42, 0.92) 20%, rgba(15, 23, 42, 0.3) 100%);
+    z-index: 2;
+}
+
+.bento-banner-content {
+    position: relative;
+    z-index: 3;
+}
+
+.glass-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.18);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 6px 14px;
+    border-radius: 50px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.bento-banner-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 10px;
+}
+
+.bento-banner-text {
+    font-size: 0.88rem;
+    color: #cbd5e1;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+/* Mini Stats dentro del Banner */
+.bento-mini-stats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-top: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.mini-stat-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.mini-stat-num {
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.mini-stat-label {
+    font-size: 0.75rem;
+    color: #94a3b8;
+    text-transform: uppercase;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 28px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 991.98px) {
+    .bento-main-banner {
+        min-height: 360px;
+    }
+}
+
+/* Estilos para la integración de servicios en la sección principal */
+.integrated-services-wrapper {
+    margin-top: 40px;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 40px;
+}
+
+.integrated-services-heading {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #0b192c;
+    margin-bottom: 4px;
+}
+
+/* Ajuste para que las 5 tarjetas de servicios queden distribuidas uniformemente en una sola línea en pantallas grandes */
+@media (min-width: 992px) {
+    .integrated-services-wrapper .col-lg {
+        flex: 1 0 0%;
+    }
+}
+
 /* Services Section */
 .services-section {
     padding: 40px 0 90px;
@@ -853,7 +1112,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #f8fafc;
+    background: #fff;
     color: #334155;
     border: 1px solid #e2e8f0;
     padding: 10px 18px;
@@ -878,6 +1137,267 @@ body {
 .modern-team-card:hover .btn-doctor-cta i {
     transform: translateX(4px);
 }
+
+
+/* Interactive Results Section Styles */
+.interactive-results-section {
+    padding: 90px 0;
+    background-color: #ffffff;
+}
+
+.interactive-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #f1f5f9;
+    color: var(--primary-blue);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.interactive-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0b192c;
+    margin-bottom: 8px;
+}
+
+.interactive-subtitle {
+    color: #64748b;
+    font-size: 1.05rem;
+    font-style: italic;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+/* Card Container */
+.comparison-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 28px;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.03);
+}
+
+.comparison-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(59, 130, 246, 0.35);
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.08);
+}
+
+/* Before / After Slider Core Styles */
+.img-comparison-container {
+    position: relative;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    cursor: ew-resize;
+    user-select: none;
+}
+
+.img-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+/* La imagen de antes ocupa por defecto el 50% del ancho y se recorta dinámicamente */
+.before-img {
+    width: 50%;
+    z-index: 2;
+    border-right: 2px solid rgba(255, 255, 255, 0.8);
+}
+
+/* Etiquetas flotantes dentro de la imagen */
+.badge-tag {
+    position: absolute;
+    top: 12px;
+    z-index: 4;
+    font-size: 0.72rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    backdrop-filter: blur(4px);
+}
+
+.badge-before {
+    left: 12px;
+    background: rgba(15, 23, 42, 0.75);
+    color: #ffffff;
+}
+
+.badge-after {
+    right: 12px;
+    background: rgba(37, 99, 235, 0.9);
+    color: #ffffff;
+}
+
+/* Barra y botón central para arrastrar */
+.slider-handle {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    transform: translateX(-50%);
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.handle-line {
+    width: 2px;
+    flex-grow: 1;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.3);
+}
+
+.handle-circle {
+    width: 38px;
+    height: 38px;
+    background: #ffffff;
+    color: var(--primary-blue);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    font-size: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+    border: 2px solid #e2e8f0;
+}
+
+/* Info Text Area */
+.comparison-info {
+    padding: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.treatment-category {
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: var(--primary-blue);
+    margin-bottom: 6px;
+    text-transform: uppercase;
+}
+
+.case-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 6px;
+}
+
+.case-desc {
+    font-size: 0.85rem;
+    color: #64748b;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.before-img, .slider-handle {
+    transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1), left 0.8s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* FAQ Section Styling */
+.faq-section {
+    padding: 90px 0;
+    background-color: #fff;
+}
+
+.faq-badge {
+    display: inline-flex;
+    align-items: center;
+    background: #ffffff;
+    color: var(--primary-blue);
+    padding: 6px 16px;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid #e2e8f0;
+}
+
+.faq-title {
+    font-size: 2.25rem;
+    font-weight: 800;
+    color: #0b192c;
+    margin-bottom: 8px;
+}
+
+.faq-subtitle {
+    color: #64748b;
+    font-size: 1.05rem;
+    font-style: italic;
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+/* Accordion Custom Overrides */
+.custom-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.custom-faq-item {
+    background: #ffffff;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 20px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(15, 23, 42, 0.02);
+}
+
+.custom-faq-btn {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #0f172a;
+    background-color: #ffffff;
+    padding: 20px 24px;
+    box-shadow: none !important;
+}
+
+.custom-faq-btn:not(.collapsed) {
+    color: var(--primary-blue);
+    background-color: #ffffff;
+}
+
+.custom-faq-btn::after {
+    background-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.custom-faq-body {
+    font-size: 0.92rem;
+    color: #64748b;
+    line-height: 1.6;
+    padding: 0 24px 22px 24px;
+}
+
 
 
 /* Contact Section with Gradient & Waves */
@@ -953,52 +1473,6 @@ body {
     margin-bottom: 32px;
 }
 
-/* Info Cards */
-.contact-info-list {
-    display: flex;
-    gap: 24px;
-    margin-bottom: 36px;
-    flex-wrap: wrap;
-}
-
-.info-item {
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    padding: 12px 20px;
-    border-radius: 16px;
-    min-width: 200px;
-}
-
-.info-icon {
-    width: 44px;
-    height: 44px;
-    background: #ffffff;
-    color: var(--primary-blue);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.1rem;
-}
-
-.info-item h5 {
-    font-size: 0.85rem;
-    color: #bfdbfe;
-    margin: 0 0 2px 0;
-    font-weight: 600;
-}
-
-.info-item p {
-    font-size: 0.95rem;
-    color: #ffffff;
-    font-weight: 700;
-    margin: 0;
-}
-
 /* Button CTA */
 .btn-contact-action {
     background-color: #ffffff;
@@ -1071,7 +1545,7 @@ body {
 /* Google Reviews Section Styling */
 .google-reviews-section {
     padding: 90px 0;
-    background-color: #f8fafc;
+    background-color: #fff;
     position: relative;
     overflow: hidden;
 }
@@ -1129,12 +1603,12 @@ body {
 
 .carousel-fade-left {
     left: 0;
-    background: linear-gradient(to right, #f8fafc 0%, rgba(248, 250, 252, 0) 100%);
+    background: linear-gradient(to right, #fff 0%, rgba(248, 250, 252, 0) 100%);
 }
 
 .carousel-fade-right {
     right: 0;
-    background: linear-gradient(to left, #f8fafc 0%, rgba(248, 250, 252, 0) 100%);
+    background: linear-gradient(to left, #fff 0%, rgba(248, 250, 252, 0) 100%);
 }
 
 /* Track Animation */
