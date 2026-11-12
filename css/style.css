@@ -7,6 +7,11 @@
     --text-muted: #64748b;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 85px;
+}
+
 body {
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: var(--text-dark);
@@ -362,7 +367,7 @@ body {
     position: relative;
     z-index: 2;
     width: 100%;
-    max-width: 440px;
+    max-width: 500px;
     height: auto;
     filter: drop-shadow(0 15px 25px rgba(15, 23, 42, 0.12));
     transition: transform 0.4s ease;
@@ -495,12 +500,12 @@ body {
 
 /* Primer contenedor: Gradiente diagonal suave de Derecha a Izquierda */
 .bento-stat-card {
-    background: linear-gradient(135deg, #ffffff 40%, rgba(37, 99, 235, 0.10) 100%);
+   background: linear-gradient(135deg, #ffffff 40%, rgba(37, 99, 235, 0.10) 100%);
 }
 
 /* Segundo contenedor: Gradiente diagonal suave de Izquierda a Derecha */
 .bento-feature-card {
-    background: linear-gradient(225deg, #ffffff 40%, rgba(37, 99, 235, 0.10) 100%);
+    background: linear-gradient(135deg, #ffffff 40%, rgba(37, 99, 235, 0.10) 100%);
 }
 
 /* Asegurar que el contenido interno de las tarjetas quede por encima del fondo */
@@ -571,7 +576,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80');
+    background-image: url('../img/background/doctor.jpg');
     background-size: cover;
     background-position: center;
     transition: transform 0.5s ease;
@@ -852,6 +857,40 @@ body {
     padding: 90px 0;
     background-color: #ffffff;
     color: #0f172a;
+    position: relative;
+    overflow: hidden;
+}
+
+/* SVGs Decorativos Laterales en el Fondo (Adaptados para Móvil y Desktop) */
+.location-shape-bg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px; /* Ancho más compacto en móviles para no invadir contenido */
+    height: 450px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.7; /* Ligeramente más suaves en móvil */
+}
+
+.location-shape-left {
+    left: -20px; /* Se asoman sutilmente desde el borde izquierdo */
+}
+
+.location-shape-right {
+    right: -20px; /* Se asoman sutilmente desde el borde derecho */
+}
+
+.location-shape-bg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Contenedor principal por encima de los SVG */
+.location-container-inner {
+    position: relative;
+    z-index: 2;
 }
 
 .clean-badge {
@@ -887,6 +926,8 @@ body {
     border-radius: 28px;
     overflow: hidden;
     box-shadow: 0 12px 35px rgba(15, 23, 42, 0.04);
+    position: relative;
+    z-index: 2;
 }
 
 .clean-info-content {
@@ -976,6 +1017,21 @@ body {
     width: 100%;
     height: 100%;
     min-height: 420px;
+}
+
+/* Media Query para pantallas grandes (Escritorio recupera todo el tamaño) */
+@media (min-width: 992px) {
+    .location-shape-bg {
+        width: 220px;
+        height: 520px;
+        opacity: 1;
+    }
+    .location-shape-left {
+        left: 0;
+    }
+    .location-shape-right {
+        right: 0;
+    }
 }
 
 @media (max-width: 991.98px) {
@@ -1324,10 +1380,36 @@ body {
     transition: width 0.8s cubic-bezier(0.25, 1, 0.5, 1), left 0.8s cubic-bezier(0.25, 1, 0.5, 1);
 }
 
-/* FAQ Section Styling */
+/* FAQ Section Styling & Side Waves */
 .faq-section {
     padding: 90px 0;
     background-color: #fff;
+    position: relative;
+}
+
+/* Ondas SVG laterales en segundo plano */
+.faq-wave-bg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 220px;
+    height: 100%;
+    max-height: 550px;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.faq-wave-left {
+    left: 0;
+}
+
+.faq-wave-right {
+    right: 0;
+}
+
+.faq-wave-bg svg {
+    width: 100%;
+    height: 100%;
 }
 
 .faq-badge {
@@ -1398,6 +1480,15 @@ body {
     padding: 0 24px 22px 24px;
 }
 
+/* Ajustes Responsivos */
+@media (max-width: 991.98px) {
+    .faq-section {
+        padding: 70px 0;
+    }
+    .faq-wave-bg {
+        display: none !important;
+    }
+}
 
 
 /* Contact Section with Gradient & Waves */
@@ -1517,7 +1608,6 @@ body {
     z-index: 2;
     width: 100%;
     height: auto;
-    filter: drop-shadow(0 20px 30px rgba(15, 23, 42, 0.25));
     /* Degradado sutil en la parte inferior de la imagen */
     -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
     mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
@@ -1548,6 +1638,38 @@ body {
     background-color: #fff;
     position: relative;
     overflow: hidden;
+}
+
+/* SVGs Decorativos Laterales para Reseñas */
+.reviews-shape-bg {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 140px;
+    height: 450px;
+    z-index: 1;
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+.reviews-shape-left {
+    left: -20px;
+}
+
+.reviews-shape-right {
+    right: -20px;
+}
+
+.reviews-shape-bg svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Contenedor principal por encima de los SVG */
+.reviews-container-inner {
+    position: relative;
+    z-index: 2;
 }
 
 .google-badge-pill {
@@ -1636,6 +1758,10 @@ body {
     box-shadow: 0 15px 35px rgba(37, 99, 235, 0.08);
 }
 
+.review-card .google-svg{
+    margin-top: -20px;
+}
+
 .review-header {
     display: flex;
     align-items: center;
@@ -1687,6 +1813,21 @@ body {
     color: #475569;
     line-height: 1.5;
     margin: 0;
+}
+
+/* Media Query para pantallas grandes (Escritorio) */
+@media (min-width: 992px) {
+    .reviews-shape-bg {
+        width: 220px;
+        height: 520px;
+        opacity: 1;
+    }
+    .reviews-shape-left {
+        left: 0;
+    }
+    .reviews-shape-right {
+        right: 0;
+    }
 }
 
 /* Footer Section Styling */

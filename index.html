@@ -18,136 +18,139 @@
 
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon -->
+    <link rel="icon" href="img/logo/dental.png">
 </head>
 <body>
 
 <!-- Navbar transparente / Efecto Glassmorphism -->
-    <nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNavbar">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <!-- Logotipo de Diente en SVG -->
-                <svg width="32" height="36" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C7.5 2 4 4.5 4 8.5C4 12.5 5.5 15.5 7 19.5C8.2 22.7 9.5 26 11 26C11.5 26 12 24 12 22.5C12 24 12.5 26 13 26C14.5 26 15.8 22.7 17 19.5C18.5 15.5 20 12.5 20 8.5C20 4.5 16.5 2 12 2Z" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M9 7C9 7 10 6 12 6" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
-                </svg>
-                Dental
-            </a>
-            
-            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Servicios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-            </div>
+<nav class="navbar navbar-expand-lg fixed-top navbar-custom" id="mainNavbar">
+    <div class="container">
+        <a class="navbar-brand" href="#inicio">
+            <!-- Logotipo de Diente en SVG -->
+            <svg width="32" height="36" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C7.5 2 4 4.5 4 8.5C4 12.5 5.5 15.5 7 19.5C8.2 22.7 9.5 26 11 26C11.5 26 12 24 12 22.5C12 24 12.5 26 13 26C14.5 26 15.8 22.7 17 19.5C18.5 15.5 20 12.5 20 8.5C20 4.5 16.5 2 12 2Z" stroke="#0f172a" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9 7C9 7 10 6 12 6" stroke="#0f172a" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            Dental
+        </a>
+        
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#nosotros">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#servicios">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contacto">Contacto</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Sección Hero (Principal) -->
-    <section class="hero-section">
-        <!-- Formas geométricas minimalistas de fondo (Lado izquierdo) -->
-        <div class="bg-shapes-left">
-            <div class="geo-shape geo-circle-1"></div>
-            <div class="geo-shape geo-circle-2"></div>
-            <div class="geo-shape geo-square-1"></div>
-            <div class="geo-shape geo-ring-1"></div>
-            <div class="geo-shape geo-cross-1"></div>
-            <div class="geo-shape geo-diamond-1"></div>
-            <div class="geo-shape geo-dots-grid"></div>
-            <div class="geo-shape geo-circle-small"></div>
-        </div>
+<!-- Sección Hero (Principal) -->
+<section class="hero-section" id="inicio">
+    <!-- Formas geométricas minimalistas de fondo (Lado izquierdo) -->
+    <div class="bg-shapes-left">
+        <div class="geo-shape geo-circle-1"></div>
+        <div class="geo-shape geo-circle-2"></div>
+        <div class="geo-shape geo-square-1"></div>
+        <div class="geo-shape geo-ring-1"></div>
+        <div class="geo-shape geo-cross-1"></div>
+        <div class="geo-shape geo-diamond-1"></div>
+        <div class="geo-shape geo-dots-grid"></div>
+        <div class="geo-shape geo-circle-small"></div>
+    </div>
 
-        <div class="container position-relative z-2">
-            <div class="row align-items-center">
-                <!-- Contenido de texto izquierdo -->
-                <div class="col-lg-6 z-2">
-                    <h1 class="hero-title">¡Dentista de<br>Servicio 24 Horas!</h1>
-                    <p class="hero-subtitle">Cuidamos de tu sonrisa en cualquier momento con la mejor atención y confort.</p>
-                    
-                    <!-- Botón de Acción Principal (CTA) -->
-                    <a href="#appointment" class="btn-appointment">Agendar Cita</a>
+    <div class="container position-relative z-2">
+        <div class="row align-items-center">
+            <!-- Contenido de texto izquierdo -->
+            <div class="col-lg-6 z-2">
+                <h1 class="hero-title">¡Dentista de<br>Servicio 24 Horas!</h1>
+                <p class="hero-subtitle">Cuidamos de tu sonrisa en cualquier momento con la mejor atención y confort.</p>
+                
+                <!-- Botón de Acción Principal (CTA) -->
+                <a href="#contacto" class="btn-appointment">Agendar Cita</a>
 
-                    <!-- Insignia de Prueba Social de Reseñas de Google -->
-                    <div class="social-proof-wrapper">
-                        <div class="avatar-group">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Usuario">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Usuario">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                <!-- Insignia de Prueba Social de Reseñas de Google -->
+                <div class="social-proof-wrapper">
+                    <div class="avatar-group">
+                        <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&q=80" alt="Usuario">
+                    </div>
+                    <div class="proof-details">
+                        <div class="stars-row">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <span class="score">4.9 / 5.0</span>
                         </div>
-                        <div class="proof-details">
-                            <div class="stars-row">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <span class="score">4.9 / 5.0</span>
-                            </div>
-                            <div class="proof-text">
-                                Más de 500+ reseñas en 
-                                <span class="google-brand">
-                                    <!-- Logotipo Oficial de Google multicolor en SVG -->
-                                    <svg class="google-logo-svg" viewBox="0 0 24 24">
-                                        <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-                                        <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-                                        <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-                                        <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-                                    </svg>
-                                    <div class="d-flex">
-                                        <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
-                                    </div>
-                                </span>
-                            </div>
+                        <div class="proof-text">
+                            Más de 500+ reseñas en 
+                            <span class="google-brand">
+                                <!-- Logotipo Oficial de Google multicolor en SVG -->
+                                <svg class="google-logo-svg" viewBox="0 0 24 24">
+                                    <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                                    <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                                    <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                                    <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                                </svg>
+                                <div class="d-flex">
+                                    <span class="g-blue">G</span><span class="g-red">o</span><span class="g-yellow">o</span><span class="g-blue">g</span><span class="g-green">l</span><span class="g-red">e</span>
+                                </div>
+                            </span>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Imagen Derecha / Ilustración con formas orgánicas -->
-                <div class="col-lg-6 position-relative">
-                    <div class="hero-image-wrapper">
-                      <!-- Capa 2 Posterior SÓLIDA movida hacia la derecha -->
-                      <svg class="blob-bg-back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none">
-                            <path d="M480,300Q460,420,350,460Q240,500,150,420Q60,340,110,220Q160,100,280,80Q400,60,450,170Q500,280,480,300Z" fill="#7dd3fc"/>
-                        </g>
-                    </svg>
-                    <!-- Capa 1 Principal Sólida -->
-                    <svg class="blob-bg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none">
-                            <path d="M420,320Q390,390,320,420Q250,450,180,410Q110,370,100,290Q90,210,160,160Q230,110,310,130Q390,150,425,225Q460,300,420,320Z" fill="#93c5fd" opacity="0.6"/>
-                            <path d="M480,300Q460,420,350,460Q240,500,150,420Q60,340,110,220Q160,100,280,80Q400,60,450,170Q500,280,480,300Z" fill="#3b82f6"/>
-                        </g>
-                    </svg>
+            <!-- Imagen Derecha / Ilustración con formas orgánicas -->
+            <div class="col-lg-6 position-relative">
+                <div class="hero-image-wrapper">
+                  <!-- Capa 2 Posterior SÓLIDA movida hacia la derecha -->
+                  <svg class="blob-bg-back" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none">
+                        <path d="M480,300Q460,420,350,460Q240,500,150,420Q60,340,110,220Q160,100,280,80Q400,60,450,170Q500,280,480,300Z" fill="#7dd3fc"/>
+                    </g>
+                </svg>
+                <!-- Capa 1 Principal Sólida -->
+                <svg class="blob-bg" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="none">
+                        <path d="M420,320Q390,390,320,420Q250,450,180,410Q110,370,100,290Q90,210,160,160Q230,110,310,130Q390,150,425,225Q460,300,420,320Z" fill="#93c5fd" opacity="0.6"/>
+                        <path d="M480,300Q460,420,350,460Q240,500,150,420Q60,340,110,220Q160,100,280,80Q400,60,450,170Q500,280,480,300Z" fill="#3b82f6"/>
+                    </g>
+                </svg>
 
-                    <!-- Elementos decorativos flotantes -->
-                    <div class="floating-blob-1"></div>
-                    <div class="floating-blob-2"></div>
-                    <div class="floating-circle-1"></div>
-                    <div class="floating-circle-2"></div>
+                <!-- Elementos decorativos flotantes -->
+                <div class="floating-blob-1"></div>
+                <div class="floating-blob-2"></div>
+                <div class="floating-circle-1"></div>
+                <div class="floating-circle-2"></div>
 
-                    <!-- Enfermera / Doctora ilustrada en SVG (Brazos cruzados, estilo vectorial moderno) -->
-                    <img src="img/hero/woman.png" class="nurse-vector">
-                </div>
+                <!-- Enfermera / Doctora ilustrada en SVG (Brazos cruzados, estilo vectorial moderno) -->
+                <img src="img/hero/woman.png" class="nurse-vector">
             </div>
         </div>
     </div>
+</div>
 </section>
 
 <!-- Modern Clinic Overview & Services Section (Unidas) -->
-<section class="clinic-overview-section" id="about">
+<section class="clinic-overview-section" id="nosotros">
     <div class="container">
         <!-- Section Header -->
         <div class="text-center mb-5">
@@ -207,7 +210,7 @@
         </div>
 
         <!-- Sub-sección Integrada: Nuestros Servicios Especializados -->
-        <div class="integrated-services-wrapper pt-4">
+        <div class="integrated-services-wrapper pt-4" id="servicios">
             <div class="text-center mt-5">
                 <h3 class="integrated-services-heading">Nuestros Servicios Principales</h3>
                 <p class="text-muted small">Soluciones diseñadas para cada etapa de tu salud bucal</p>
@@ -307,7 +310,45 @@
 
 <!-- Location Section (Estilo Minimalista Flotante - Fondo Blanco) -->
 <section class="location-clean-section" id="location">
-    <div class="container">
+    <!-- SVG Decorativo Izquierdo - Malla de Puntos -->
+    <div class="location-shape-bg location-shape-left">
+        <svg viewBox="0 0 220 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="dotPatternLeft" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <circle cx="3" cy="3" r="2.5" fill="rgba(37, 99, 235, 0.16)"/>
+                </pattern>
+                <radialGradient id="gradLeft" cx="0%" cy="50%" r="85%">
+                    <stop offset="0%" stop-color="white"/>
+                    <stop offset="100%" stop-color="black"/>
+                </radialGradient>
+                <mask id="fadeMaskLeft">
+                    <rect width="220" height="520" fill="url(#gradLeft)"/>
+                </mask>
+            </defs>
+            <rect width="220" height="520" fill="url(#dotPatternLeft)" mask="url(#fadeMaskLeft)"/>
+        </svg>
+    </div>
+
+    <!-- SVG Decorativo Derecho - Malla de Puntos -->
+    <div class="location-shape-bg location-shape-right">
+        <svg viewBox="0 0 220 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="dotPatternRight" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <circle cx="3" cy="3" r="2.5" fill="rgba(37, 99, 235, 0.16)"/>
+                </pattern>
+                <radialGradient id="gradRight" cx="100%" cy="50%" r="85%">
+                    <stop offset="0%" stop-color="white"/>
+                    <stop offset="100%" stop-color="black"/>
+                </radialGradient>
+                <mask id="fadeMaskRight">
+                    <rect width="220" height="520" fill="url(#gradRight)"/>
+                </mask>
+            </defs>
+            <rect width="220" height="520" fill="url(#dotPatternRight)" mask="url(#fadeMaskRight)"/>
+        </svg>
+    </div>
+
+    <div class="container location-container-inner">
         <!-- Encabezado sutil -->
         <div class="text-center mb-5">
             <span class="clean-badge mb-2">
@@ -376,21 +417,21 @@
                 <div class="col-lg-7 order-1 order-lg-2">
                     <div class="clean-map-container">
                         <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15707.98188168132!2d-67.43000000000002!3d10.240000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e802094ef555555%3A0x0!2sSan%20Mateo%2C%20Aragua!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" 
-                            width="100%" 
-                            height="100%" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
-                    </div>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15707.98188168132!2d-67.43000000000002!3d10.240000000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e802094ef555555%3A0x0!2sSan%20Mateo%2C%20Aragua!5e0!3m2!1ses!2sve!4v1700000000000!5m2!1ses!2sve" 
+                        width="100%" 
+                        height="100%" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
                 </div>
-
             </div>
-        </div>
 
+        </div>
     </div>
+
+</div>
 </section>
 
 <!-- Team Section / Nuestro Equipo Médico (Estética Ultra Moderna) -->
@@ -431,66 +472,104 @@
             <div class="col-12 col-md-6 col-lg-3">
                 <div class="modern-team-card">
                     <div class="modern-img-wrapper">
-                      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=600&q=80" alt="Dra. Elena Rostova" class="modern-team-img">
-                        <span class="modern-specialty-badge">Estética Dental</span>
-                    </div>
-                    <div class="modern-team-info">
-                        <h3 class="modern-doctor-name">Dra. Elena Rostova</h3>
-                        <p class="modern-doctor-role">Diseño de Sonrisa</p>
-                        <p class="modern-doctor-bio">Experta en carillas, coronas estéticas y restauración de alta precisión.</p>
-                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
-                            <span>Agendar Cita</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
+                      <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Dra. Elena Rostova" class="modern-team-img">
+                      <span class="modern-specialty-badge">Estética Dental</span>
+                  </div>
+                  <div class="modern-team-info">
+                    <h3 class="modern-doctor-name">Dra. Elena Rostova</h3>
+                    <p class="modern-doctor-role">Diseño de Sonrisa</p>
+                    <p class="modern-doctor-bio">Experta en carillas, coronas estéticas y restauración de alta precisión.</p>
+                    <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                        <span>Agendar Cita</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
-
-            <!-- Doctor 3 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="modern-team-card">
-                    <div class="modern-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Dr. Carlos Mendoza" class="modern-team-img">
-                        <span class="modern-specialty-badge">Implantología</span>
-                    </div>
-                    <div class="modern-team-info">
-                        <h3 class="modern-doctor-name">Dr. Carlos Mendoza</h3>
-                        <p class="modern-doctor-role">Cirugía e Implantes</p>
-                        <p class="modern-doctor-bio">Especializado en rehabilitación oral completa y cirugías guiadas sin dolor.</p>
-                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
-                            <span>Agendar Cita</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Doctor 4 -->
-            <div class="col-12 col-md-6 col-lg-3">
-                <div class="modern-team-card">
-                    <div class="modern-img-wrapper">
-                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dra. Valeria Gómez" class="modern-team-img">
-                        <span class="modern-specialty-badge">Odontopediatría</span>
-                    </div>
-                    <div class="modern-team-info">
-                        <h3 class="modern-doctor-name">Dra. Valeria Gómez</h3>
-                        <p class="modern-doctor-role">Cuidado Infantil</p>
-                        <p class="modern-doctor-bio">Dedicada a brindar una experiencia empática, cómoda y sin miedo para los más pequeños.</p>
-                        <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
-                            <span>Agendar Cita</span>
-                            <i class="fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
         </div>
+
+        <!-- Doctor 3 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="modern-team-card">
+                <div class="modern-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7?auto=format&fit=crop&w=600&q=80" alt="Dr. Carlos Mendoza" class="modern-team-img">
+                    <span class="modern-specialty-badge">Implantología</span>
+                </div>
+                <div class="modern-team-info">
+                    <h3 class="modern-doctor-name">Dr. Carlos Mendoza</h3>
+                    <p class="modern-doctor-role">Cirugía e Implantes</p>
+                    <p class="modern-doctor-bio">Especializado en rehabilitación oral completa y cirugías guiadas sin dolor.</p>
+                    <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                        <span>Agendar Cita</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor 4 -->
+        <div class="col-12 col-md-6 col-lg-3">
+            <div class="modern-team-card">
+                <div class="modern-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" alt="Dra. Valeria Gómez" class="modern-team-img">
+                    <span class="modern-specialty-badge">Odontopediatría</span>
+                </div>
+                <div class="modern-team-info">
+                    <h3 class="modern-doctor-name">Dra. Valeria Gómez</h3>
+                    <p class="modern-doctor-role">Cuidado Infantil</p>
+                    <p class="modern-doctor-bio">Dedicada a brindar una experiencia empática, cómoda y sin miedo para los más pequeños.</p>
+                    <a href="https://wa.me/584120000000" target="_blank" class="btn-doctor-cta">
+                        <span>Agendar Cita</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
 </section>
 
 <!-- Google Reviews Testimonials Section -->
-<section class="google-reviews-section">
-    <div class="container">
+<section class="google-reviews-section" id="reviews">
+    <!-- SVG Decorativo Izquierdo - Malla de Puntos -->
+    <div class="reviews-shape-bg reviews-shape-left">
+        <svg viewBox="0 0 220 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="dotPatternReviewsLeft" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <circle cx="3" cy="3" r="2.5" fill="rgba(37, 99, 235, 0.16)"/>
+                </pattern>
+                <radialGradient id="gradReviewsLeft" cx="0%" cy="50%" r="85%">
+                    <stop offset="0%" stop-color="white"/>
+                    <stop offset="100%" stop-color="black"/>
+                </radialGradient>
+                <mask id="fadeMaskReviewsLeft">
+                    <rect width="220" height="520" fill="url(#gradReviewsLeft)"/>
+                </mask>
+            </defs>
+            <rect width="220" height="520" fill="url(#dotPatternReviewsLeft)" mask="url(#fadeMaskReviewsLeft)"/>
+        </svg>
+    </div>
+
+    <!-- SVG Decorativo Derecho - Malla de Puntos -->
+    <div class="reviews-shape-bg reviews-shape-right">
+        <svg viewBox="0 0 220 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <pattern id="dotPatternReviewsRight" x="0" y="0" width="22" height="22" patternUnits="userSpaceOnUse">
+                    <circle cx="3" cy="3" r="2.5" fill="rgba(37, 99, 235, 0.16)"/>
+                </pattern>
+                <radialGradient id="gradReviewsRight" cx="100%" cy="50%" r="85%">
+                    <stop offset="0%" stop-color="white"/>
+                    <stop offset="100%" stop-color="black"/>
+                </radialGradient>
+                <mask id="fadeMaskReviewsRight">
+                    <rect width="220" height="520" fill="url(#gradReviewsRight)"/>
+                </mask>
+            </defs>
+            <rect width="220" height="520" fill="url(#dotPatternReviewsRight)" mask="url(#fadeMaskReviewsRight)"/>
+        </svg>
+    </div>
+
+    <div class="container reviews-container-inner">
         <!-- Section Header -->
         <div class="text-center mb-5">
             <div class="google-badge-pill">
@@ -521,7 +600,12 @@
                             <h4 class="reviewer-name">María García</h4>
                             <span class="review-date">Hace 2 semanas</span>
                         </div>
-                        <i class="fa-brands fa-google google-icon-card"></i>
+                        <svg class="google-svg" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
                     </div>
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i>
@@ -541,7 +625,12 @@
                             <h4 class="reviewer-name">Carlos Mendoza</h4>
                             <span class="review-date">Hace 1 mes</span>
                         </div>
-                        <i class="fa-brands fa-google google-icon-card"></i>
+                        <svg class="google-svg" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
                     </div>
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i>
@@ -561,7 +650,12 @@
                             <h4 class="reviewer-name">Elena Rodríguez</h4>
                             <span class="review-date">Hace 3 semanas</span>
                         </div>
-                        <i class="fa-brands fa-google google-icon-card"></i>
+                        <svg class="google-svg" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
                     </div>
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i>
@@ -581,7 +675,12 @@
                             <h4 class="reviewer-name">Javier López</h4>
                             <span class="review-date">Hace 2 meses</span>
                         </div>
-                        <i class="fa-brands fa-google google-icon-card"></i>
+                        <svg class="google-svg" viewBox="0 0 24 24">
+                            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+                            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+                        </svg>
                     </div>
                     <div class="review-stars">
                         <i class="fa-solid fa-star"></i>
@@ -618,12 +717,12 @@
                     <div class="img-comparison-container" id="comparison1">
                         <!-- Imagen Después (Fondo) -->
                         <div class="img-container after-img">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Después">
+                            <img src="https://images.unsplash.com/photo-1769559893692-c6d0623bf8e4?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Después">
                             <span class="badge-tag badge-after">Después</span>
                         </div>
                         <!-- Imagen Antes (Primer plano recortable) -->
                         <div class="img-container before-img">
-                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Antes">
+                            <img src="https://images.unsplash.com/photo-1679741919483-acf704e00495?q=80&w=1325&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Antes">
                             <span class="badge-tag badge-before">Antes</span>
                         </div>
                         <!-- Barra Divisora Interactiva -->
@@ -650,11 +749,11 @@
                 <div class="comparison-card">
                     <div class="img-comparison-container" id="comparison2">
                         <div class="img-container after-img">
-                            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="Después">
+                            <img src="https://images.unsplash.com/photo-1663182234283-28941e7612da?q=80&w=1093&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Después">
                             <span class="badge-tag badge-after">Después</span>
                         </div>
                         <div class="img-container before-img">
-                            <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Antes">
+                            <img src="https://images.unsplash.com/photo-1790575169299-3eec1772e653?q=80&w=1227&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Antes">
                             <span class="badge-tag badge-before">Antes</span>
                         </div>
                         <div class="slider-handle">
@@ -679,11 +778,11 @@
                 <div class="comparison-card">
                     <div class="img-comparison-container" id="comparison3">
                         <div class="img-container after-img">
-                            <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=600&q=80" alt="Después">
+                            <img src="https://images.unsplash.com/photo-1678473882249-6378b6e12241?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Después">
                             <span class="badge-tag badge-after">Después</span>
                         </div>
                         <div class="img-container before-img">
-                            <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=600&q=80" alt="Antes">
+                            <img src="https://images.unsplash.com/photo-1790574318313-7bea173506f2?q=80&w=1227&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Antes">
                             <span class="badge-tag badge-before">Antes</span>
                         </div>
                         <div class="slider-handle">
@@ -708,8 +807,24 @@
 </section>
 
 <!-- FAQ Section -->
-<section class="faq-section" id="faq">
-    <div class="container">
+<section class="faq-section position-relative overflow-hidden" id="faq">
+    <!-- SVG Decorativo Izquierdo -->
+    <div class="faq-wave-bg faq-wave-left d-none d-lg-block">
+        <svg viewBox="0 0 250 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M-50,0 C80,150 -40,300 70,450 C140,530 20,600 -50,600 Z" fill="rgba(37, 99, 235, 0.05)"/>
+            <path d="M-80,40 C50,180 -70,320 40,470 C100,540 -10,600 -80,600 Z" fill="rgba(59, 130, 246, 0.04)"/>
+        </svg>
+    </div>
+
+    <!-- SVG Decorativo Derecho -->
+    <div class="faq-wave-bg faq-wave-right d-none d-lg-block">
+        <svg viewBox="0 0 250 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M300,0 C170,150 290,300 180,450 C110,530 230,600 300,600 Z" fill="rgba(37, 99, 235, 0.05)"/>
+            <path d="M330,40 C200,180 320,320 210,470 C150,540 260,600 330,600 Z" fill="rgba(59, 130, 246, 0.04)"/>
+        </svg>
+    </div>
+
+    <div class="container position-relative z-2">
         <!-- Section Header -->
         <div class="text-center mb-5">
             <span class="faq-badge mb-2">
@@ -786,7 +901,7 @@
 </section>
 
 <!-- Contact Section with Wave SVG & Gradient Background -->
-<section class="contact-section" id="contact">
+<section class="contact-section" id="contacto">
     <!-- SVG Wave Divider Superior (Transición suave) -->
     <div class="contact-wave-top">
         <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -825,7 +940,7 @@
                         <path d="M420,320Q390,390,320,420Q250,450,180,410Q110,370,100,290Q90,210,160,160Q230,110,310,130Q390,150,425,225Q460,300,420,320Z" fill="rgba(255, 255, 255, 0.18)"/>
                     </svg>
                     
-                    <img src="img/hero/woman.png" alt="Enfermera Dental" class="contact-nurse-img">
+                    <img src="img/hero/woman-2.png" alt="Enfermera Dental" class="contact-nurse-img">
                 </div>
             </div>
 
@@ -870,11 +985,11 @@
             <div class="col-lg-2 col-md-6">
                 <h4 class="footer-heading">Navegación</h4>
                 <ul class="footer-links">
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Nosotros</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Servicios</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Reseñas</a></li>
-                    <li><a href="#"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
+                    <li><a href="#inicio"><i class="fa-solid fa-chevron-right"></i> Inicio</a></li>
+                    <li><a href="#nosotros"><i class="fa-solid fa-chevron-right"></i> Nosotros</a></li>
+                    <li><a href="#servicios"><i class="fa-solid fa-chevron-right"></i> Servicios</a></li>
+                    <li><a href="#reviews"><i class="fa-solid fa-chevron-right"></i> Reseñas</a></li>
+                    <li><a href="#contacto"><i class="fa-solid fa-chevron-right"></i> Contacto</a></li>
                 </ul>
             </div>
 

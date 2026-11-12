@@ -7,6 +7,58 @@ function updateNavbar() {
 window.addEventListener('scroll', updateNavbar);
 window.addEventListener('DOMContentLoaded', updateNavbar);
 
+// Manejo de navegación en la navbar y cierre automático en móviles
+document.addEventListener('DOMContentLoaded', () => {
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const navbarCollapse = document.getElementById('navbarNav');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            // Cerrar menú móvil si está desplegado
+            if (navbarCollapse && navbarCollapse.classList.contains('show')) {
+                const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse);
+                bsCollapse.hide();
+            }
+        });
+    });
+
+    // Actualizar enlace activo en la navbar según la sección visible al hacer scroll
+    const sections = [
+        document.getElementById('inicio'),
+        document.getElementById('nosotros'),
+        document.getElementById('servicios'),
+        document.getElementById('contacto')
+    ].filter(Boolean);
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollPosition = window.pageYOffset + 140;
+
+        // Si se llegó al final de la página, activar contacto
+        if ((window.innerHeight + window.pageYOffset) >= document.documentElement.scrollHeight - 50) {
+            current = 'contacto';
+        } else {
+            sections.forEach(section => {
+                const top = section.getBoundingClientRect().top + window.pageYOffset;
+                const height = section.offsetHeight;
+                if (scrollPosition >= top && scrollPosition < top + height) {
+                    current = section.getAttribute('id');
+                }
+            });
+        }
+
+        if (current) {
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                if (href === `#${current}`) {
+                    navLinks.forEach(item => item.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
+
 // Interactive & Automated Infinite Carousel for Services
 const serviceCards = document.querySelectorAll('.service-card');
 const dots = document.querySelectorAll('.dot');
